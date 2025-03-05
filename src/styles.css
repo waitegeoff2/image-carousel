@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.image-frame {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 600px;
+    width: 600px;
+    background-color: lightgrey;
+}
+
+.image-slide {
+
+    position: relative;
+    position: absolute;
+    height: auto;
+    width: 600px;
+    height: 400px;
+    background-color: purple;
+    
+
+}
+
+.image {
+    position: absolute;
+    opacity: 0;
+}
+
+.image[active] {
+    opacity: 1;
+}
+
+img {
+    opacity: 100;
+    width: 600px;
+    height: auto;
+    
+}
+
+.left-arrow {
+    /* position on image slide */
+    position: absolute;
+    top: 300px;
+    left: 5px;
+    z-index: 10;
+
+}
+
+.right-arrow {
+    position:absolute;
+    right: 5px;
+    top: 300px;
+    z-index: 10;
+}
+
+.invisible-image {
+    opacity: 0;
+}
+
+.visible-image {
+    opacity: 100;
+}
